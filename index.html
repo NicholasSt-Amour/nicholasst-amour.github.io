@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> Nicholas St-Amour - Achademic Website</title>
+    <title> Nicholas St-Amour - Academic Website</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Nicholas St-Amour</h1>
-            <p>Student in Data Science</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,24 +23,39 @@
 
     <main class="container">
         <section id="intro">
+            <div style="text-align: center;">
             <img src="images/profile.jpg" alt="Profile photo" class="profile-photo"/>
+            <p>Graduation 2023 at ESC Garneau</p>
+            </div>
             <h2>Welcome!</h2>
-            <p>
-                I'm a third year student in Data Science (Honours B.Sc. in Computer Science / Honours B.Sc. in Mathematics) at the University of Ottawa. This site shares my academic work and CV.
-            </p>
+            <p>I'm a third year student in Data Science
+                (Honours B.Sc. in Computer Science / Honours B.Sc. in Mathematics)
+                at the University of Ottawa.
+                I have found great intrest in my Computer Science classes,
+                especially learning how to make a website, creating application and graphs.
+                This site shares my academic work, CV and hobbies.</p>
         </section>
+    </main>
 
+    <main class="container">
         <section id="awards">
             <h2>Awards</h2>
             <ul>
                 <li><strong>Dean Honor List:</strong> 2023-Present</li>
+                <li>GPA: 9.68</li>
             </ul>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Nicholas St-Amour. Last updated July 13 2025.</p>
+            <p id=last-updated></p>
+            <script>
+                // Format: July 13, 2025
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const updated = new Date(document.lastModified).toLocaleDateString(undefined, options);
+                document.getElementById('last-updated').textContent = `© 2025 Nicholas St-Amour. Last updated ${updated}.`;
+            </script>
         </div>
     </footer>
 </body>
