@@ -30,6 +30,13 @@ nav li {
     margin: 0 10px;
 }
 
+.profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
 section {
     margin-bottom: 2rem;
 }
