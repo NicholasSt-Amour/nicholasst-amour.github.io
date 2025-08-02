@@ -1,4 +1,4 @@
-document.querySelectorAll("slideshow-container").forEach((container) => {
+document.querySelectorAll(".slideshow-container").forEach((container) => {
     let slides = container.querySelectorAll(".slide");
     let currentIndex = 0;
 
