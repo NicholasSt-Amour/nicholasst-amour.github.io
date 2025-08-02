@@ -7,21 +7,14 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Nicholas St-Amour</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <h1>Nicholas St-Amour</h1>
-    <p><strong>(613) 315-1395 | nicholas.m.stamour@gmail.com</strong></p>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("fetch").innerHTML = data);
+    </script>
+
+    <main class="container">
     <h2><strong>SUMMARY OF QUALIFICATIONS</strong></h2>
     <hr>
     <p>
@@ -109,5 +102,6 @@
         <li><strong>Respond to medical and water emergencies</strong>, including seizures and distressed swimmers, demonstrating the ability to <strong>stay composed</strong> and make <strong>critical, time-sensitive</strong> decisions under pressure</li>
         <li></li>
     </ul>
+    </main>
 </body>
 </html>
