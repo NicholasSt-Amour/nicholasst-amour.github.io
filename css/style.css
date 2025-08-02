@@ -48,7 +48,7 @@ footer {
     padding: 1rem;
 }
 
-.detail {
-    margin-top: -0.5em;
-    color: #555;
+h4 {
+    font-size: 1.1rem;
+    margin: 0;
 }
