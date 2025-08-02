@@ -33,7 +33,7 @@
             <p>
                 My first solve of these numberless puzzles took over an hour, but with practice, I've brought my best time to about ten minutes. It's a fun way to challenge my problem-solving skills and keep my mind sharp.
             </p>
-            
+
             <h2>Triathlon</h2>
             <p>
                 Triathlon has become my favorite sports. I find the training incredibly rewarding! There's a clear connection between the effort I put in and the improvements I see in my fitness. I enjoy pushing my limits during races as a way to challenge myself and prove what I'm capable of. While I'm proud of all my races, my favorite is the personal triathlon I complete every year on my birthday. 
@@ -67,5 +67,17 @@
             </p>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p id=last-updated></p>
+            <script>
+                // Format: July 13, 2025
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const updated = new Date(document.lastModified).toLocaleDateString(undefined, options);
+                document.getElementById('last-updated').textContent = `© 2025 Nicholas St-Amour. Last updated ${updated}.`;
+            </script>
+        </div>
+    </footer>
 </body>
 </html>
