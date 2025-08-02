@@ -9,14 +9,11 @@
 </head>
 <body>
     <div id="header"></div>
-    <script>
-        fetch("header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-    </script>
+    <script src="js/header.js" defer></script>
 
     <main class="container">
-    <h2><strong>SUMMARY OF QUALIFICATIONS</strong></h2>
+    <!-- TRY AND USE STICK CLASS TO H2 ALSO?? ######################################################## -->
+    <h2 class="stick"><strong>SUMMARY OF QUALIFICATIONS</strong></h2>
     <hr>
     <ul>
         <li><strong>Third year student in Data Science at the University of Ottawa (GPA: 9.68, Dean's Honour List)</strong></li>
@@ -24,7 +21,6 @@
         <li>Strong communicator with a demonstrated ability to work effectively in team environments</li>
         <li>Taught <strong>800+ students</strong> in swimming lessons and lifeguarding courses as well as mentored 50+ lifeguards</li>
     </ul>
-    </p>
 
     <h2><strong>SKILLS</strong></h2>
     <hr>

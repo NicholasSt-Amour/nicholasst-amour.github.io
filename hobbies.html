@@ -9,24 +9,20 @@
 </head>
 <body>
     <div id = "header"></div>
-    <script>
-        fetch("header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-    </script>
+    <script src="js/header.js" defer></script>
 
     <main class="container">
         <section id="Introduction">
             <h2>Here are a few of my hobbies!</h2>
             <p>
-                This section takes a more relaxed and informal tone than the rest of my site,
-                but I hope it offers a clearer picture of who I am beyond work.
+                This section takes a more relaxed and informal tone than the rest of my site, but I hope it offers a clearer picture of who I am beyond work. It’s also a space for me to practice my HTML skills.
                 Who knows — if you look closely, you might even notice that I bring the same level of effort and dedication to my hobbies as I do to my professional pursuits.
             </p>
         </section>
 
         <section id="Hobbies"> 
             <h2>Sudoku</h2>
+            <img src="images/Sudoku.jpeg" class="photo">
             <p>
                 Sudoku is a passion I've reconnected with recently. Lately, I've explored new variations of the puzzle, such as Killer Sudoku, which adds a mathematical twist. In this version, you can start with no numbers given at all, only the sums of small groups of cells to guide you. 
             </p>
@@ -41,6 +37,13 @@
             <p>
                 I started this tradition in 2024 at age 19 and plan to continue it for as long as I can. The format is simple. Suppose a is my age. I swim a*100m, bike a*5km, and run a*1km. Since these distances don't match any official race, I complete it on my own, which adds an extra level of challenge and meaning.
             </p>
+            <div class="slideshow-container">
+            <div class="slide"><img src="images/Triatlon-bike1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-swim1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-run1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-bike2.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-swim2.jpg"></div>
+            </div>
 
             <h2>Backpacking & Canoe-Camping</h2>
             <p>
@@ -49,6 +52,12 @@
             <p>
                 In 2025, I planned to go backpacking again, but a stress fracture forced a change of plans. Instead, I brough my canoe to Kawartha Highlands and went canoe-camping. It turned out to be an equally rewarding way to explore the outdoors, covering 33.5km! I even got the oportunity to have my own private island for one night! Both activities have become important parts of how I connect with nature.
             </p>
+            <div class="slideshow-container">
+            <div class="slide"><img src="images/backpacking1.jpg"></div>
+            <div class="slide"><img src="images/backpacking2.jpg"></div>
+            <div class="slide"><img src="images/canoe-camping1.jpg"></div>
+            <div class="slide"><img src="images/canoe-camping2.jpg"></div>
+            </div>
 
             <h2>Trips</h2>
             <p>
@@ -57,6 +66,13 @@
             <p>
                 That trip sparked a passion for travel, and I'm excited to have more meaningful experiences around the world in the years to come.
             </p>
+            <div class="slideshow-container">
+            <div class="slide"><img src="images/Triatlon-bike1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-swim1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-run1.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-bike2.jpg"></div>
+            <div class="slide"><img src="images/Triathlon-swim2.jpg"></div>
+            </div>
             
             <h2>Reading</h2>
             <p>
@@ -79,5 +95,6 @@
             </script>
         </div>
     </footer>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
