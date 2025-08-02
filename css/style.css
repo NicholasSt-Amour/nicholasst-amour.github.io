@@ -47,3 +47,8 @@ footer {
     color: #888;
     padding: 1rem;
 }
+
+.detail {
+    margin-top: -0.5em;
+    color: #555;
+}
