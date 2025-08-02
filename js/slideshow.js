@@ -1,16 +1,18 @@
-let slideIndex = 1;
-showSlide(slideIndex);
+document.querySelectorAll("slideshow-container").forEach((container) => {
+    let slides = container.querySelectorAll(".slide");
+    let currentIndex = 0;
 
-function changeSlide(n) {
-    showSlide(slideIndex += n);
-}
+    slides[currentIndex].style.display = "block";
 
-function showSlide(n) {
-    let slides = document.getElementsByClassName("slide");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
+    container.querySelector(".prev").addEventListener("click", () => {
+        slides[currentIndex].style.display = "none";
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        slides[currentIndex].style.display = "block";
+    });
+
+    container.querySelector(".next").addEventListener("click", () => {
+        slides[currentIndex].style.display = "none";
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].style.display = "block";
+    });
+});
