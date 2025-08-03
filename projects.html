@@ -11,15 +11,51 @@
     <div id="header"></div>
     <script src="js/header.js" defer></script>
 
-    <h2>Here are all the projects I've done</h2>
-    <p></p>
+    <main class="container">
+    <h2>My Projects</h2>
+    <h4>Full-Stack Hotel Booking System (Completed)</h4>
+    <p class="stick">Node.js, PostgreSQL, React, CSS | Mar 2025</p>
+    <p>This comprehensive group project involved building a full-stack hotel booking system designed to meet database requirements. Our team of three began by creating an Entity-Relationship (ER) diagram that modeled hotel chains, hotels, rooms, clients, employees, and bookings, establishing clear relationships and constraints. This diagram was then translated into a relational database schema to ensure the structure was optimized for real-world use.</p>
+    <p>We carefully defined primary keys, foreign keys and domain constraints to maintain data integrity throughout all operations. Using PostgreSQL with pgAdmin 4, we implemented the schema and enforced these constraints, making sure that our database could accurately represent hotel data, room availability, and customer reservations without inconsistency or errors.</p>
+    <p>Our database contained detailed data for five hotel chains, each with at least eight hotels spanning multiple categories and geographical zones. We designed the room data to reflect diverse capacities and sizes, ensuring that at least two hotels shared the same zone for meaningful querying. Beyond data insertion, we implemented complex SQL operations including queries and triggers that automatically enforced business rules such as preventing double bookings or invalid updates.</p>
+    <p>The project culminated with a React-based web application interface that allowed both clients and hotel employees to interact seamlessly with the system. Clients could search for rooms by multiple criteria such as dates, capacity and price with the interface dynamically updating available options. Employees had additional capabilities to manage reservations, convert bookings into active stays, and handle payments. </p>
+    <p>My favourite part of this project was designing and implementing the database using SQL. Working with pgAdmin 4 provided a clear and tangible way to visualize and manipulate the data we input through the website. Despite the intense one-month timeframe and balancing the demands of five other courses, our team managed to deliver a functional and well-structured application that met the project requirements, earnig a final grade of 97%.</p>
+    <p>I'm proud of what we accomplished under these constraints, though I recognize there are many areas for improvement, particularly in the front-end design and user experience. This website itself serves as an opportunity for me to revisit front-end development, deepen my understanding, and build on what I learned during this project. You can view the project on GitHub at <a href="https://github.com/glk-0/e-Hotels" target="_blank" rel="noopener noreferrer"></a>.</p>
 
+    
+    <h4>Personal Portfolio Website (Ongoing)</h4>
+    <p class="stick">HTML, CSS, JavaScript | Jul 2025 - Present</p>
+    <p>This website is a personal initiative aimed at deepening my understanding of front-end development while creating a platform to showcase my projects, skills, and interests. I designed the layout from the ground up using HTML and CSS. Every section, from the navigation menu to the image galleries, is designed to let me experiment with different aspects of HTML, CSS, and JavaScript, giving me the opportunity to explore a wide range of front-end development techniques while still providing a smooth browsing experience.</p>
+    <p>Beyond static design, I integrated JavaScript to add interactivity and dynamic features. These include a custom-built slideshow component and an automated "last updated" timestamp that reflects the most recent site modifications.</p>
+    <p>While this site functions as a personal portfolio, its true purpose is as a sandbox for experimentation and growth. It gives me the freedom to revisit and deepen concepts I only briefly encountered in past projects, push my skills further, and continuously evolve the design. No link is needed, you're already exploring my virtual playground!</p>
 
-
-
-
+    <h4>Adaptive Tic Tac Toe Game (Completed)</h4>
+    <p class="stick">Java | Jun 2024</p>
+    <img src="images/GameMain.java 1 15 21 10.png" class="photo"/>
+    <p>This project was my very first "big" programming endeavor, and I remain proud of what I accomplished with it. Originally a school assignment to create a simple, working 3×3 Tic Tac Toe game in Java, I decided to challenge myself and expand its capabilities well beyond the requirements. The final project supports customizable grid sizes of any i × j configuration, dynamically adapting win conditions based on the chosen board dimensions. It can be played either as a two-player game or against a computer opponent that makes random moves, adding an extra layer of replayability.</p>
+    <p>Looking back, it's a small project compared to others I've since completed, but it marked a key milestone in my growth as a developer, showing me how rewarding it can be to go beyond expectations and explore the limits of a problem. I earned more that just 100% on the homework; I earned the love of coding. Who knows—maybe one day I'll revisit this project to give the computer player real AI capabilities.</p>
+    <p>You can view the project here <a href="https://github.com/NicholasSt-Amour/Adaptive-Tic-Tac-Toe.git" target="_blank" rel="noopener noreferrer"></a>.</p>
+    
+    <h4>Software Development (Completed)</h4>
+    <p class="stick">Java, XML, SQLite, Android Studio | Sep 2024 - Dec 2024</p>
+    <p>This project was my first experience working on a large-scale software application in a collaborative team environment. Over the course of the semester, our team of four developed a mobile Event Attendance Management System designed to simplify event registration and attendance tracking for organized events. We focused on building a robust foundation that could handle real-world data while maintaining a user-friendly interface.</p>
+    <p>We utilized SQL, ensuring that event information, user accounts, and registrations were accurately stored and easily retrievable. I worked closely with teammates to plan and implement the database schema, define relationships between entities, and handle data persistence efficiently across the application.</p>
+    <p>I also implemented seven JUnit tests to validate critical features of the application and streamline debugging as the project grew to several thousand lines of code. Weekly meetings were essential for coordinating work, resolving merge conflicts, and making architectural decisions as a team. The project not only strengthened my technical skills in Java and database design, but also gave me valuable experience in team-based development, working on a large codebase, and following a structured workflow from planning to delivery.</p>
+    <p>This project showed me what we were truly capable of. The work was divided into four deliverables, each of which seemed impossible at first glance. But by consistently delivering week by week, we surprised ourselves and demonstrated what is possible. Our efforts earned us 101.5% out of a maximum possible grade of 104.5%, and gained me teammates for the rest of our coding career.</p>
+    <p>I will warn that this project is very large, so I don't recommend downloading it. But you can watch the demo video (automatically plays at 2x speed) that I made for our final submission. You can view the project here <a href="https://github.com/uOttawaSEG/project-project-group-15" target="_blank" rel="noopener noreferrer">https://github.com/uOttawaSEG/project-project-group-15</a>.</p>
+    <video id="demoVideo" controls>
+        <source src="images/Software Development - Demo Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </main>
 
     <footer><div class="container"><p id=last-updated></p></div></footer>
     <script src="js/footer.js"></script>
+    <script>
+        const video = document.getElementById("demoVideo");
+        video.addEventListener('play', () => {
+            video.playbackRate = 2.0;
+        });
+    </script>
 </body>
 </html>
