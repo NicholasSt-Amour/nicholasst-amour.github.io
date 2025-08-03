@@ -42,10 +42,12 @@ nav li {
 }
 
 .photo {
-    width: 200px;
+    min-width: 200px;
+    max-width: 40%;
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 section {
